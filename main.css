@@ -1,0 +1,298 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+}
+
+html{
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 100;
+    color: #2B9DFF;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.btn-outline{
+    display: block;
+    text-decoration: none;
+    color: #2B9DFF;
+    border: 2px solid #2B9DFF;
+    border-radius: 6px;
+    width: 175px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-filled{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #2B9DFF;
+    border-radius: 6px;
+    width: 175px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Nav */
+
+nav{
+    line-height: 150px;
+    text-align: right;
+}
+
+nav a{
+    text-decoration: none;
+    color: #202427;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav a:first-child{
+    float: left;
+}
+
+nav a img{
+    vertical-align: middle;
+}
+
+nav a span{
+    background-color: #2B9DFF;
+    padding: 5px 15px;
+    border-radius: 1000px;
+    color: white;
+    font-weight: 100;
+}
+
+/* Header */
+
+header{
+    height: 1000px;
+    min-height: 1000px;
+    padding: 0 6%;
+    background-image: url(img/background_header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+header h1{
+    width: 40%;
+    margin: 2em 0;
+}
+
+/* Team */
+
+.team{
+    text-align: center;
+    margin: 10em 0 3em 0;
+    padding: 0 6%;
+    background-image: url(img/background_team.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team h1{
+    width: 50%;
+    margin: 0 auto 30px auto;
+}
+
+.members{
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+    color: #202427;
+}
+
+.person h3{
+    margin: 0 50px;
+    margin-bottom: 5px;
+}
+
+/* About */
+.about {
+    padding: 0 6%;
+    background-image: url(img/background_about.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 80%;
+    height: 900px;
+    min-height: 900px;
+}
+
+.about h1{
+    margin-bottom: 30px;
+    padding-top: 300px;
+}
+
+.icons img{
+    margin-right: 30px;
+}
+
+.about h1, .icons{
+    margin-left: 50%;
+}
+
+/* call to action */
+
+.call-to-action{
+    text-align: center;
+    padding: 20em 6% 20em 6%;
+    background-image: url(img/background_calltoaction.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+
+.call-to-action h1, .call-to-action a{
+    display: inline-block;
+    margin: 0 60px;
+    vertical-align: middle;
+}
+
+/* Footer */
+
+footer{
+    padding: 0 6%;
+    margin-bottom: 40px;
+    color: #2B9DFF;
+}
+
+footer p, .footer-pages{
+    display: inline-block;
+}
+
+.footer-pages{
+    float: right;
+}
+
+.footer-pages a{
+    text-decoration: none;
+    font-weight: 100;
+    color: #2B9DFF;
+    margin-left: 30px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1010px){
+        header{
+            height: 1600px;
+            min-height: 1600px;
+            background-image: url(img/mobile_background_header.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom right;
+        }
+
+        header h1{
+            width: 100%;
+        }
+
+        .team{
+            margin: 3em 0 3em 0;
+            background-image: url(img/mobile_background_team.png);
+            background-position: top;
+        }
+
+        .team h1{
+            width: 100%;
+        }
+        .about{
+            background-image: url(img/mobile_background_about.png);
+            background-position: left center;
+            background-size: contain;
+            height: 900px;
+            min-height: 900px;
+            overflow-y: visible;
+        }
+
+        .about h1{
+            padding-top: 900px;
+        }
+
+        .about h1, .icons{
+            margin-left: 0;
+        }
+
+        .call-to-action{
+            margin-top: 25em;
+            padding: 15em 6% 15em 6%;
+            background-size: 70%;
+        }
+
+        .call-to-action h1, .call-to-action a{
+            margin-bottom: 30px;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+        .footer-pages{
+            visibility: hidden;
+        }
+
+        footer p, .footer-pages{
+            display: block;
+        }
+}
+
+@media only screen and (max-width: 610px){
+    header{
+        height: 1300px;
+        min-height: 1300px;
+
+    }
+
+    header h1{
+        margin: 1em 0 0 0;
+    }
+
+    .about h1{
+        padding-top: 800px;
+    }
+
+    .members{
+        flex-direction: column;
+    }
+
+    .person{
+        margin-top: 30px;
+    }
+
+    h1{
+        font-size: 2.9rem;
+        font-weight: 100;
+        color: #2B9DFF;
+    }
+    
+    h3{
+        font-size: 22px;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+}
